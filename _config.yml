@@ -1,6 +1,6 @@
 #-------------------------------
 # Site Settings
-title: SEODev
+title: SEODev beta
 logo: # You can add own logo. For example '/images/logo.png'.
 description: Personal blog sharing SEO tips
 baseurl: "https://seodev.netlify.app" # the subpath of your site, e.g. /blog
