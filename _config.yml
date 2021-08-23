@@ -1,9 +1,9 @@
 #-------------------------------
 # Site Settings
-title: Menca
+title: SEODev
 logo: # You can add own logo. For example '/images/logo.png'.
-description: Menca personal blogging theme for Jekyll
-baseurl: "https://bensadok.touhami.fr" # the subpath of your site, e.g. /blog
+description: Personal blog sharing SEO tips
+baseurl: "https://seodev.netlify.app" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 color_scheme: auto # You can choose three modes auto, light, and dark. By default, the auto mode is set, which means the user can choose the light or dark mode themself.
 
@@ -11,7 +11,7 @@ color_scheme: auto # You can choose three modes auto, light, and dark. By defaul
 #-------------------------------
 # Author Settings
 author:
-  author__name: Camelia Mendes
+  author__name: Kevin Angga
   author__bio: Designs, talks, and writes about web, ethics, privacy, and dev. I share design tutorials, free resources and inspiration.
   author__avatar: '/images/01-1.jpg'
 
@@ -29,9 +29,8 @@ social:
 #-------------------------------
 # Hero Settings
 hero:
-  hero__title: Hey, I’m Camelia Mendes
+  hero__title: Hey, I’m Kevin Angga
   hero__description: Designs, talks, and writes about web, ethics, privacy, and dev. I share design tutorials, free resources and inspiration.
-  hero__image: '/images/01.jpg'
 
 
 #-------------------------------
@@ -41,31 +40,6 @@ mailchimp__identifier: frnla.us6.list-manage.com/subscribe/post?u=6314d69a3f315a
 mailchimp__input__text: Subscribe here
 mailchimp__button__text: Get a new tip
 
-
-#-------------------------------
-# Gallery Footer Section
-gallery:
-  gallery__title: Gallery
-  gallery__columns: 3
-  gallery__images:
-    - alt: 'Rest'
-      url: '/images/100.jpg'
-    - alt: 'Lifestyle'
-      url: '/images/101.jpg'
-    - alt: 'Hobby'
-      url: '/images/102.jpg'
-    - alt: 'Notes'
-      url: '/images/103.jpg'
-    - alt: 'Rest'
-      url: '/images/104.jpg'
-    - alt: 'Hobby'
-      url: '/images/105.jpg'
-    - alt: 'Fashion'
-      url: '/images/106.jpg'
-    - alt: 'Notes'
-      url: '/images/107.jpg'
-    - alt: 'Rest'
-      url: '/images/108.jpg'
 
 
 #-------------------------------
@@ -95,9 +69,12 @@ permalink: /:title
 plugins:
   - jekyll-paginate
   - jekyll-sitemap
+  - amp-jekyll
+  - jekyll-seo-tag
 
-paginate: 9
-paginate_path: "/page/:num"
+# Pagination Settings
+paginate: 6
+paginate_path: /page/:num
 
 # Pages Path
 defaults:
